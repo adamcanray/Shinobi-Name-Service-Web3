@@ -512,6 +512,8 @@ const App = () => {
 
   // Reload on accounts changed
   useEffect(() => {
+    if (!window.ethereum) return;
+
     function handleAccountsChanged(accounts) {
       window.location.reload();
     }
