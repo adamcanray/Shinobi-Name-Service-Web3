@@ -7,7 +7,7 @@ import ethLogo from "./assets/ethlogo.png";
 import { networks } from "./utils/networks";
 
 const tld = ".sarutobi";
-const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
+const CONTRACT_ADDRESS = process.env.REACT_APP_CONTRACT_ADDRESS;
 
 const App = () => {
   const [currentAccount, setCurrentAccount] = useState("");
